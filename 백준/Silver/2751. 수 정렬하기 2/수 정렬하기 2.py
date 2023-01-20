@@ -1,12 +1,17 @@
 import sys
 
-num = int(sys.stdin.readline())
-re = []
+def sort_2751() : 
 
-for i in range(num) :
-    re.append(int(sys.stdin.readline()))
+    num = int(sys.stdin.readline())
+    re = []
 
-re.sort()
+    for i in range(num) :
+        re.append(int(sys.stdin.readline()))
 
-for r in re:
-    print(r)
+    re.sort()
+
+    for r in re:
+        print(r)
+    return 0
+
+sort_2751()
