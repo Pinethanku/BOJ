@@ -4,18 +4,15 @@ import sys
 def minheap_1927():
     times = int(sys.stdin.readline())
     minheap = []
-    result = []
     for i in range(times) :
         calcul = int(sys.stdin.readline())
         if calcul==0:
             if minheap:
-                result.append(heapq.heappop(minheap))
+                print(heapq.heappop(minheap))
             else:
-                result.append(0)
+                print(0)
         else:
             heapq.heappush(minheap, calcul)
-    
-    for re in result:
-        print(re)
+    return 0
         
 minheap_1927()
